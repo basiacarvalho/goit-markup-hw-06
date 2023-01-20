@@ -62,7 +62,9 @@
       <section class="section banner">
         <div class="banner__container container">
           <h1 class="banner__title">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
-          <button class="banner__button" type="button" data-modal-open>Zamów usługę</button>
+          <button class="banner__button main-page-button" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
       <!--Second section - LOREM IPSUM-->
@@ -413,31 +415,31 @@
             </ul>
           </address>
         </div>
-        <div class="join-us">
-          <h3 class="join-us__title">dołącz do nas</h3>
-          <ul class="social-links">
-            <li class="social-link">
+        <div class="join-us footer-section">
+          <h3 class="join-us__title footer-title">dołącz do nas</h3>
+          <ul class="join-us__social-links social-links">
+            <li class="join-us__social-link social-link">
               <button class="social-link__container social-link__container-footer" type="button">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </button>
             </li>
-            <li class="social-link">
+            <li class="join-us__social-link social-link">
               <button class="social-link__container social-link__container-footer" type="button">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </button>
             </li>
-            <li class="social-link">
+            <li class="join-us__social-link social-link">
               <button class="social-link__container social-link__container-footer" type="button">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </button>
             </li>
-            <li class="social-link">
+            <li class="join-us__social-link social-link">
               <button class="social-link__container social-link__container-footer" type="button">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -445,6 +447,18 @@
               </button>
             </li>
           </ul>
+        </div>
+        <div class="newsletter footer-section">
+          <h3 class="newsletter__title footer-title">zapisz się do newslettera</h3>
+          <form>
+            <label for="user_email"></label>
+            <input type="email" name="email" id="user_email" placeholder="E-mail" />
+            <button class="newsletter__button main-page-button" type="submit">
+              Zapisz się<svg class="icon-button" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
