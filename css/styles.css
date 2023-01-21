@@ -405,11 +405,6 @@ p {
   text-transform: uppercase;
 }
 
-.icon-button {
-  fill: var(--main-color);
-  margin-left: 24px;
-}
-
 .join-us {
   margin-right: 78px;
 }
@@ -425,7 +420,34 @@ p {
 .newsletter__button {
   display: flex;
   align-items: center;
-  padding: 13px 42px 13px 42px;
+  padding: 13px 28px 13px 42px;
+}
+
+.newsletter__form {
+  display: flex;
+}
+
+.newsletter__icon-button {
+  fill: var(--main-color);
+  margin-left: 24px;
+}
+
+.newsletter__input {
+  background-color: var(--background-color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  margin-right: 12px;
+  padding: 15px 0 15px 16px;
+  width: 358px;
+}
+
+.newsletter__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .social-link__container-footer {
