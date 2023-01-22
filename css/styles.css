@@ -522,6 +522,49 @@ p {
   transform: translateX(-50%) translateY(-50%) scale(0);
 }
 
+.order-form * {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__contact-details {
+  margin-left: 40px;
+}
+
+.order-form__contact-detail {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  margin-bottom: 10px;
+}
+
+.order-form__contact-name {
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M16 16c2.947 0 5.333-2.387 5.333-5.333S18.946 5.334 16 5.334c-2.947 0-5.333 2.387-5.333 5.333S13.054 16 16 16zm0 2.667c-3.56 0-10.667 1.787-10.667 5.333v1.333c0 .733.6 1.333 1.333 1.333h18.667c.733 0 1.333-.6 1.333-1.333V24c0-3.547-7.107-5.333-10.667-5.333z'/%3E%3C/svg%3E");
+  background-size: 18px 18px;
+  padding: 11px 0 11px 42px;
+  background-position-x: 12px;
+  background-position-y: 11px;
+}
+
+.order-form__label {
+  color: var(--text-color);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.16;
+  margin-bottom: 4px;
+}
+
+.order-form__title {
+  align-items: flex-start;
+  color: var(--header-color);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  margin: 40px 40px 12px;
+}
+
 /* Portfolio page */
 .filters {
   column-gap: 8px;
