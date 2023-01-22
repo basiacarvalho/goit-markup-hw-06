@@ -596,12 +596,38 @@ p {
   top: 29px;
 }
 
+.order-form__statement {
+  appearance: none;
+}
+
+.order-form__statement:checked + .order-form__statement-label::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+  background-position: center;
+  border: none;
+}
+
+.order-form__statement-container {
+  position: relative;
+}
+
+.order-form__statement-label::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--header-color);
+  top: 3px;
+  left: -3px;
+}
+
 .order-form__statement-label {
   color: var(--text-color);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1.71;
+  margin-left: 15px;
 }
 
 .order-form__statement-container {
