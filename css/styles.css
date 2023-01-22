@@ -67,7 +67,7 @@ p {
   color: var(--active-color);
 }
 
-.main-page-button {
+.main-button {
   background-color: var(--active-color);
   border: none;
   border-radius: 4px;

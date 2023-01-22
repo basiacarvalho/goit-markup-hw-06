@@ -62,7 +62,7 @@
       <section class="section banner">
         <div class="banner__container container">
           <h1 class="banner__title">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
-          <button class="banner__button main-page-button" type="button" data-modal-open>
+          <button class="banner__button main-button" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
@@ -450,7 +450,7 @@
         </div>
         <div class="newsletter footer-section">
           <h3 class="newsletter__title footer-title">zapisz się do newslettera</h3>
-          <form class="newsletter__form" name="newsletter_form">
+          <form class="newsletter__form" name="newsletter-form">
             <label for="user_email"></label>
             <input
               class="newsletter__input"
@@ -459,7 +459,7 @@
               id="user_email"
               placeholder="E-mail"
             />
-            <button class="newsletter__button main-page-button" type="submit">
+            <button class="newsletter__button main-button" type="submit">
               Zapisz się
               <svg class="newsletter__icon-button" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -478,6 +478,33 @@
             </svg>
           </button>
         </div>
+        <form class="order-form" name="order-form">
+          <div class="order-form__contact-details" role="group" aria-labelledby="order-form-head">
+            <p id="order-form-head">Zostaw swoje dane w formularzu poniżej</p>
+            <label class="order-form__label" for="user_name">Imię</label>
+            <input class="order-form__contact-detail" type="text" name="username" id="user_name" />
+            <label class="order-form__label" for="user_phone">Telefon</label>
+            <input class="order-form__contact-detail" type="tel" name="phone" id="user_phone" />
+
+            <label class="order-form__label" for="user_email">Email</label>
+            <input class="order-form__contact-detail" type="email" name="email" id="user_email" />
+
+            <label class="order-form__label" for="user_comment">Komentarz</label>
+            <textarea class="order-form__textarea" name="comment" id="user_comment"></textarea>
+          </div>
+          <input
+            class="order-form__statement"
+            type="checkbox"
+            name="statement"
+            id="user_statement"
+            value="statement"
+          />
+          <label class="order-form__statement-label" for="user_statement"
+            >Oświadczam iż akceptuję <span>Regulamin</span> i
+            <span>Politykę Prywatności.</span></label
+          >
+          <button class="order-form__button main-button" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
