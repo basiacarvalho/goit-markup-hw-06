@@ -479,47 +479,69 @@
           </button>
         </div>
         <form class="order-form" name="order-form">
+          <p class="order-form__title" id="order-form-head">
+            Zostaw swoje dane w formularzu poniżej
+          </p>
           <div class="order-form__contact-details" role="group" aria-labelledby="order-form-head">
-            <p class="order-form__title" id="order-form-head">
-              Zostaw swoje dane w formularzu poniżej
-            </p>
-            <label class="order-form__label" for="user_name">Imię</label>
-            <input
-              class="order-form__contact-name order-form__contact-detail"
-              type="text"
-              name="username"
-              id="user_name"
-            />
-            <label class="order-form__label" for="user_phone">Telefon</label>
-            <input
-              class="order-form__contact-phone order-form__contact-detail"
-              type="tel"
-              name="phone"
-              id="user_phone"
-            />
-
-            <label class="order-form__label" for="user_email">Email</label>
-            <input
-              class="order-form__contact-email order-form__contact-detail"
-              type="email"
-              name="email"
-              id="user_email"
-            />
+            <div class="order-form__container">
+              <label class="order-form__label" for="user_name">Imię</label>
+              <input
+                class="order-form__contact-name order-form__contact-detail"
+                type="text"
+                name="username"
+                id="user_name"
+              />
+              <svg class="order-form__name-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+            <div class="order-form__container">
+              <label class="order-form__label" for="user_phone">Telefon</label>
+              <input
+                class="order-form__contact-phone order-form__contact-detail"
+                type="tel"
+                name="phone"
+                id="user_phone"
+              />
+              <svg class="order-form__name-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+            <div class="order-form__container">
+              <label class="order-form__label" for="user_email">Email</label>
+              <input
+                class="order-form__contact-email order-form__contact-detail"
+                type="email"
+                name="email"
+                id="user_email"
+              />
+              <svg class="order-form__name-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
 
             <label class="order-form__label" for="user_comment">Komentarz</label>
-            <textarea class="order-form__textarea" name="comment" id="user_comment"></textarea>
+            <textarea
+              class="order-form__comment"
+              name="comment"
+              id="user_comment"
+              rows="6"
+              placeholder="Wprowadź tekst"
+            ></textarea>
           </div>
-          <input
-            class="order-form__statement"
-            type="checkbox"
-            name="statement"
-            id="user_statement"
-            value="statement"
-          />
-          <label class="order-form__statement-label" for="user_statement"
-            >Oświadczam iż akceptuję <span>Regulamin</span> i
-            <span>Politykę Prywatności.</span></label
-          >
+          <div class="order-form__statement-container">
+            <input
+              class="order-form__statement"
+              type="checkbox"
+              name="statement"
+              id="user_statement"
+              value="statement"
+            />
+            <label class="order-form__statement-label" for="user_statement"
+              >Oświadczam iż akceptuję <a class="order-form__link" href="#">Regulamin</a> i
+              <a class="order-form__link" href="#">Politykę Prywatności.</a></label
+            >
+          </div>
           <button class="order-form__button main-button" type="submit">Wyślij</button>
         </form>
       </div>
