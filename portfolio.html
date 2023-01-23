@@ -298,38 +298,57 @@
             </ul>
           </address>
         </div>
-        <div class="join-us">
-          <h3 class="join-us__title">dołącz do nas</h3>
-          <ul class="social-links">
-            <li class="social-link">
-              <div class="social-link__container social-link__container-footer">
+        <div class="join-us footer-section">
+          <h3 class="join-us__title footer-title">dołącz do nas</h3>
+          <ul class="join-us__social-links social-links">
+            <li class="join-us__social-link social-link">
+              <button class="social-link__container social-link__container-footer">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
-              </div>
+              </button>
             </li>
-            <li class="social-link">
-              <div class="social-link__container social-link__container-footer">
+            <li class="join-us__social-link social-link">
+              <button class="social-link__container social-link__container-footer">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
-              </div>
+              </button>
             </li>
-            <li class="social-link">
-              <div class="social-link__container social-link__container-footer">
+            <li class="join-us__social-link social-link">
+              <button class="social-link__container social-link__container-footer">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
-              </div>
+              </button>
             </li>
-            <li class="social-link">
-              <div class="social-link__container social-link__container-footer">
+            <li class="join-us__social-link social-link">
+              <button class="social-link__container social-link__container-footer">
                 <svg class="social-link__icon-footer" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
-              </div>
+              </button>
             </li>
           </ul>
+        </div>
+        <div class="newsletter footer-section">
+          <h3 class="newsletter__title footer-title">zapisz się do newslettera</h3>
+          <form class="newsletter__form" name="newsletter-form">
+            <label class="newsletter__email" for="user_email"></label>
+            <input
+              class="newsletter__input"
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="E-mail"
+            />
+            <button class="newsletter__button main-button" type="submit">
+              Zapisz się
+              <svg class="newsletter__icon-button" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
