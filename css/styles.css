@@ -32,13 +32,9 @@ ul {
   padding-inline-start: 0;
 }
 
-h1,
-h2,
-h3,
-ul,
-p {
-  margin-block-start: 0;
-  margin-block-end: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* styles for all pages*/
@@ -81,10 +77,6 @@ p {
 }
 
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 94px 0;
 }
 
@@ -472,6 +464,9 @@ p {
 
 /* Backdrop */
 .backdrop {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
   position: fixed;
   left: 0;
   top: 0;
@@ -488,14 +483,10 @@ p {
   box-shadow: var(--box-shadow);
   height: 581px;
   width: 528px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transition: visibility 850ms ease-in-out, opacity 850ms ease-in-out, transform 850ms ease-in-out;
-  transform: translateX(-50%) translateY(-50%) scale(1);
+  transition: visibility 950ms ease-in-out, opacity 950ms ease-in-out, transform 950ms ease-in-out;
+  transform: translateY(50%) scale(1);
   opacity: 1;
   visibility: visible;
-  display: block;
 }
 
 .modal__close-btn-container {
@@ -529,7 +520,7 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-50%) translateY(-50%) scale(0);
+  transform: translateY(0%) scale(0);
 }
 
 .order-form {
